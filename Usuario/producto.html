@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="estilo.css">
+    <script type="text/javascript" src="script.js"></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+
+    <!--Barra de navegacion-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html"> <img src="imagenes/logo.png" alt="" widht="32px" height="32px"> </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item usuario_no_definido">
+            <a class="nav-link" href="account_login.html">Iniciar sesión</a>
+          </li>
+          <li class="nav-item usuario_no_definido">
+            <a class="nav-link" href="account_create.html">Crear cuenta</a>
+          </li>
+          <li class="nav-item dropdown" id="micuenta">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Mi Cuenta
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown" >
+              <a class="dropdown-item" href="MiCuenta_MisDatos.html">Mis datos</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="MiCuenta_MisPresupuestos.html">Mis Presupuestos</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="MiCuenta_MiCarrito.html">Mi Carrito</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="MiCuenta_MisCompras.html">Mis Compras</a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                buscar por
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <div class="dropdown-item">
+                  <input type="radio" name="tipo_de_busqueda" value="nombre"> nombre
+                </div>
+                <div class="dropdown-divider"></div>
+                <div class="dropdown-item">
+                  <input type="radio" name="tipo_de_busqueda" value="categoria"> categoria
+                </div>
+                <div class="dropdown-divider"></div>
+                <div class="dropdown-item">
+                  <input type="radio" name="tipo_de_busqueda" value="descripcion"> descripcion
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                busqueda por fechas
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <div class="dropdown-item">
+                  <input type="date" name="" value="">
+                </div>
+                <div class="dropdown-divider"></div>
+                <div class="dropdown-item">
+                  <input type="date" name="" value="">
+                </div>
+
+              </div>
+            </li>
+          </ul>
+          <input class="form-control mr-sm-2" type="search" placeholder="Search">
+          <a href="Busqueda.html" class="btn btn-outline-success my-2 my-sm-0"> Search </a>
+
+        </form>
+      </div>
+    </nav>
+
+    <br>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+          <!--<video controls class="img-fluid">
+            <source src="imagenes/video_no_disponible.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+          </video>-->
+          <img src="imagenes/produc.jpg" class="img-fluid" alt="">
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+          <h1 class="d-flex justify-content-center">Nombre del articulo</h1>
+          <div class="estrellas">
+            <img src="imagenes/nostar.png" widht="32px" height="32px" alt="">
+            <img src="imagenes/nostar.png" widht="32px" height="32px" alt="">
+            <img src="imagenes/nostar.png" widht="32px" height="32px" alt="">
+            <img src="imagenes/nostar.png" widht="32px" height="32px" alt="">
+            <img src="imagenes/nostar.png" widht="32px" height="32px" alt="">
+          </div>
+          <p>pepi</p>
+          <label>unidades disponibles:&nbsp;</label><label> 0</label>
+          <h4>categorias</h4>
+          <ul>
+            <li>categoria 1</li>
+          </ul>
+          <button type="button" name="button" class="btn btn-primary btn-block">Me interesa!</button>
+        </div>
+
+        <div class="d-flex justify-content-center">
+          <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+            <a href="#"><img src="imagenes/produc.jpg" class="img-fluid" alt=""></a>
+          </div>
+          <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+            <a href="#"><img src="imagenes/produc.jpg" class="img-fluid" alt=""></a>
+          </div>
+          <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+            <a href="#"><img src="imagenes/produc.jpg" class="img-fluid" alt=""></a>
+          </div>
+          <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+            <a href="#"><img src="imagenes/produc.jpg" class="img-fluid" alt=""></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <!--esto si ya compro el articulo-->
+          <div class="">
+            <button type="button" name="btn_pulgar_arriba" class="btn btn-secondary"> <img src="gud.png" alt=""></button>
+            <button type="button" name="btn_pulgar_abajo" class="btn btn-secondary"> <img src="bad.png" alt=""></button> <br>
+            <textarea name="name" rows="8" cols="123" placeholder="deja un comentario!"></textarea> <br>
+            <button type="button" name="btn_comentario" class="btn btn-secondary btn-block">comentar</button>
+          </div>
+<br>
+          <!--caja de comentarios-->
+          <div class="">
+            <h4>usuario de la pagina</h4>
+            <h6>publicado el 01 de enero del 2000 a las 00:00</h6>
+            <p>comentario</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+
+
+      
+
+
+  </body>
+</html>

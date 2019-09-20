@@ -1,0 +1,21 @@
+#micuenta{
+  /*visibility: hidden;*/
+  visibility: visible;
+}
+
+.usuario_no_definido{
+  visibility: visible;
+}
+body {
+
+  font-family: "Times New Roman", Times, serif;
+   font-style: italic;
+   font-weight: bold;
+
+  background: url("imagenes/bg.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-opacity: .1;
+}

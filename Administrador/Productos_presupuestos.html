@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="estilo.css">
+    <script type="text/javascript" src="script.js"></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+
+    <!--Barra de navegacion-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="landing_page.html">Inicio</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="Productos_enventa.html">Productos a la venta <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="Productos_enborrador.html">Productos en el borrador</a>
+          <a class="nav-item nav-link" href="Productos_presupuestos.html">Presupuestos</a>
+          <a class="nav-item nav-link" href="Producto_crear.html">Nuevo Producto</a>
+        </div>
+      </div>
+    </nav>
+
+    <!--container general-->
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+          <h1 class="d-flex justify-content-center">Mis Presupuestos</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-3 col-sm-3 col-md-3">
+          <!--container para el sidebar-->
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-12">
+                <button class="btn btn-primary btn-block" type="button" name="button">Solicitud 1</button>
+                <button class="btn btn-primary btn-block" type="button" name="button">Solicitud 2</button>
+                <button class="btn btn-primary btn-block" type="button" name="button">Solicitud 3</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-9 col-sm-9 col-md-9">
+          <!--container para los mensajes y el textarea-->
+          <div class="container">
+            <div class="row">
+              <!--mensaje 1-->
+              <div class="col-xs-6 col-sm-6 col-md-6">
+                <div class="card bg-info">
+                  <div class="card-body">
+                    <p class="card-text text-justify">pepsi</p>
+                  </div>
+                </div>
+              </div>
+              <!--espacio en blanco-->
+              <div class="col-xs-6 col-sm-6 col-md-6"></div>
+              <!--espacio en blanco-->
+              <div class="col-xs-6 col-sm-6 col-md-6"></div>
+              <!--mensaje 2-->
+              <div class="col-xs-6 col-sm-6 col-md-6">
+                <div class="card bg-info">
+                  <div class="card-body">
+                    <p class="card-text text-justify">bepis</p>
+                  </div>
+                </div>
+              </div>
+
+              <!--controles-->
+              <div class="col-xs-12 col-sm-12 col-md-12">
+                <br>
+                <div class="form-group">
+                  <a href="producto.html" class="btn btn-secondary btn-block" target="_blank">Articulo</a><br>
+                  <textarea class="form-control" name="name" rows="8" cols="80" placeholder="escribe tu mensaje aqui!"></textarea>
+                  <button class="btn btn-secondary btn-block" type="button" name="btn_mensaje">Enviar</button><br>
+
+                  <input class="form-control" type="number" name="" value="" placeholder="cuanto ofreces por este producto?">
+                  <button class="btn btn-secondary btn-block" type="button" name="button">Ofertar!</button><br>
+
+                  <label>el precio actual es de: $</label><label>?</label>
+                  <button class="btn btn-primary" type="button" name="button" onclick="window.location.href='carrito.html'">trato hecho!</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

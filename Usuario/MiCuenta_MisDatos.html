@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Document</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="estilo.css">
+    <script type="text/javascript" src="script.js"></script>
+
+  </head>
+  <body>
+
+    <!--Barra de navegacion-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html"> <img src="imagenes/logo.png" alt="" widht="32px" height="32px"> </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item usuario_no_definido">
+            <a class="nav-link" href="account_login.html">Iniciar sesión</a>
+          </li>
+          <li class="nav-item usuario_no_definido">
+            <a class="nav-link" href="account_create.html">Crear cuenta</a>
+          </li>
+          <li class="nav-item dropdown" id="micuenta">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Mi Cuenta
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown" >
+              <a class="dropdown-item" href="MiCuenta_MisDatos.html">Mis datos</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="MiCuenta_MisPresupuestos.html">Mis Presupuestos</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="MiCuenta_MiCarrito.html">Mi Carrito</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="MiCuenta_MisCompras.html">Mis Compras</a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                buscar por
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <div class="dropdown-item">
+                  <input type="radio" name="tipo_de_busqueda" value="nombre"> nombre
+                </div>
+                <div class="dropdown-divider"></div>
+                <div class="dropdown-item">
+                  <input type="radio" name="tipo_de_busqueda" value="categoria"> categoria
+                </div>
+                <div class="dropdown-divider"></div>
+                <div class="dropdown-item">
+                  <input type="radio" name="tipo_de_busqueda" value="descripcion"> descripcion
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                busqueda por fechas
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <div class="dropdown-item">
+                  <input type="date" name="" value="">
+                </div>
+                <div class="dropdown-divider"></div>
+                <div class="dropdown-item">
+                  <input type="date" name="" value="">
+                </div>
+
+              </div>
+            </li>
+          </ul>
+          <input class="form-control mr-sm-2" type="search" placeholder="Search">
+          <a href="Busqueda.html" class="btn btn-outline-success my-2 my-sm-0"> Search </a>
+
+        </form>
+      </div>
+    </nav>
+
+<br>
+
+    <!--datos del usuario-->
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-0 col-sm-3 col-md-4"></div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <h1>Perfil de usuario</h1>
+        </div>
+        <div class="col-xs-0 col-sm-3 col-md-4"></div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-xs-0 col-sm-3 col-md-4"></div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <div class="card justify-content-center">
+            <img id="img_usuario" class="card-img-top" src="imagenes/produc.jpg" alt="Card image">
+            <div class="card-body">
+              <label class="card-title">Nombre</label>
+              <label class="card-title">apellido</label> <br>
+              <label class="card-title">Correo electronico</label> <br>
+              <label class="card-title">nombre de usuario</label> <br>
+              <label class="card-title">telefono</label> <br>
+              <label class="card-title">direccion</label> <br>
+              <button class="btn btn-primary" type="button" name="btn_editar">Editar informacion</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-0 col-sm-3 col-md-4"></div>
+      </div>
+    </div>
+
+  </body>
+</html>
